@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Коржева](https://up.htmlacademy.ru/adaptive/19/user/259161).
-* Наставник: `Неизвестно`.
+* Наставник: [Михал Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
