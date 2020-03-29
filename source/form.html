@@ -25,9 +25,97 @@
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <section class="program">
+        <h1 class="program__heading heading">Подбор программы</h1>
+        <p class="program__instruction">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="program__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+          <fieldset class="program__fieldset">
+            <legend class="visually-hidden">О коте</legend>
+            <ul class="program__list ">
+              <li class="program__item">
+                <label class="program__label" for="name">Имя:*</label>
+                <input type="text" name="name" id="name" placeholder="Барсик" required>
+              </li>
+              <li class="program__item">
+                <label class="program__label" for="weight">Вес(кг):*</label>
+                <input type="number" name="weight" id="weight" placeholder="7">
+              </li>
+              <li class="program__item">
+                <label class="program__label" for="age">Возраст (лет)</label>
+                <input type="number" name="age" id="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="visually-hidden">Цель программы</legend>
+            <ul class="program__list">
+              <li class="program__item">
+                <input type="radio" name="goal" id="weight-loss" checked>
+                <label class="program__label" for="weight-loss">Похудение</label>
+              </li>
+              <li class="program__item">
+                <input type="radio" name="goal" id="weight-set">
+                <label class="program__label" for="weight-set">Набор массы</label>
+              </li>
+              <li class="program__item">
+                <input type="radio" name="goal" id="need-advice">
+                <label class="program__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Контактные данные (владельца кота)</legend>
+            <ul class="program__list">
+              <li class="program__item">
+                <label class="program__label" for="email">E-mail:*</label>
+                <input type="text" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="program__item">
+                <label class="program__label" for="telephone">Телефон:*</label>
+                <input type="text" name="telephone" id="telephone" placeholder="8(960)900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Комментарий</legend>
+            <textarea class="program__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Дополнительно</legend>
+            <ul class="program__list">
+              <li class="program__item">
+                <input type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+                <label class="program__label" for="sugar-substitute">Сахарозаменитель</label>
+              </li>
+              <li class="program__item">
+                <input type="checkbox" name="water" id="water">
+                <label class="program__label" for="water">Питьвая вода</label>
+              </li>
+              <li class="program__item">
+                <input type="checkbox" name="milk" id="milk">
+                <label class="program__label" for="milk">Молоко</label>
+              </li>
+              <li class="program__item">
+                <input type="checkbox" name="vitamins" id="vitamins">
+                <label class="program__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="program__button button">Отправить заявку</button>
+          <p class="program__note">* — Обязательные поля</p>
+        </form>
+      </section>
+    </main>
     <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__map-image" src="https://via.placeholder.com/320x360" width="320" height="360" alt="Расположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </section>
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24?text=CAT+ENERGY" alt="Кэт энерджи">
+        <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24?text=CAT+ENERGY" width="128" height="24" alt="Кэт энерджи">
       </a>
       <section class="socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -47,7 +135,7 @@
         <h2 class="visually-hidden">Разработчик</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           HTML Academy
-          <img class="copyright__logo-img" src="https://via.placeholder.com/27x34" alt="HTML Academy">
+          <img class="copyright__logo-img" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
         </a>
       </section>
     </footer>
