@@ -1,0 +1,16 @@
+.button {
+  padding: 14px 14px 15px;
+  background-color: @lightgreen;
+  text-align: center;
+  font-family: @additional-font;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: @text-light;
+  &:hover,
+  &:focus {
+    background-color: @darkgreen;
+  }
+  &:active {
+    color: fade(@text-light, 30%);
+  }
+}
