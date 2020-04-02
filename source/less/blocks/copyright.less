@@ -1,0 +1,30 @@
+.copyright {
+  padding: 29px 0;
+}
+
+.copyright__link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: @text-main;
+
+  &::before {
+    .pseudo();
+    right: 0;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/htmlacademy.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    background-image: url("../img/htmlacademy-green.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
