@@ -1,11 +1,12 @@
 .show-more {
   position: relative;
-    &::before {
+
+  &::before {
     .pseudo();
     top: 27px;
     width: 30px;
     height: 30px;
-    background-image: url(../img/icon-plus.svg);
+    background-image: url("../img/icon-plus.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -35,10 +36,12 @@
   border: none;
   font-size: 16px;
   color: @text-main;
+
   &:hover,
   &:focus {
     background-color: #ebebeb;
   }
+
   &:active {
     color: fade(@text-main, 30%);
   }

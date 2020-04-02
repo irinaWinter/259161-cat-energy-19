@@ -20,54 +20,65 @@
 
 .socials__link {
   display: block;
+
   &::before {
     .pseudo();
   }
+
   &--vk {
     width: 22px;
     height: 12px;
   }
+
   &--vk::before {
     width: 22px;
     height: 12px;
-    background-image: url(../img/icon-vk.svg);
+    background-image: url("../img/icon-vk.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
   &--vk:hover::before,
   &--vk:focus::before {
-    background-image: url(../img/icon-vk-green.svg);
+    background-image: url("../img/icon-vk-green.svg");
   }
+
   &--insta {
     width: 16px;
     height: 16px;
   }
+
   &--insta::before {
     width: 16px;
     height: 16px;
-    background-image: url(../img/icon-insta.svg);
+    background-image: url("../img/icon-insta.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
   &--insta:hover::before,
   &--insta:focus::before {
-    background-image: url(../img/icon-insta-green.svg);
+    background-image: url("../img/icon-insta-green.svg");
   }
+
   &--fb {
     width: 10px;
     height: 19px;
   }
+
   &--fb::before {
     width: 10px;
     height: 19px;
-    background-image: url(../img/icon-fb.svg);
+    background-image: url("../img/icon-fb.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
   &--fb:hover::before,
   &--fb:focus::before {
-    background-image: url(../img/icon-fb-green.svg);
+    background-image: url("../img/icon-fb-green.svg");
   }
+
   &:active {
     opacity: 0.3;
   }
