@@ -1,0 +1,70 @@
+.example {
+  background-color: @die;
+}
+
+.example__wrapper {
+  padding: 26px 20px 0;
+}
+
+.example__heading {
+  margin: 0;
+}
+
+.example__text {
+  margin: 34px 0 0;
+}
+
+.example__box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  width: 100%;
+}
+
+.example__result {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 0 15px;
+  padding: 13px 13px 10px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  &:not(:first-of-type) {
+    margin-left: 32px;
+  }
+}
+
+.example__value {
+  font-family: @additional-font;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: @text-accent;
+}
+
+.example__indicator {
+  margin: 5px 0 -25px;
+  padding: 0 5px;
+  width: 87px;
+  background-color: @die;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: @text-main;
+}
+
+.example__cost {
+  margin: 21px 0 0;
+  width: 100%;
+  font-family: @additional-font;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @text-accent;
+}
+
+.example__slider {
+  margin-top: 36px;
+}
