@@ -1,5 +1,6 @@
 .banner {
   position: relative;
+  box-sizing: border-box;
 
   &::before {
     .pseudo();
@@ -91,19 +92,33 @@
 
 @media (min-width: 1300px) {
   .banner {
+    position: initial;
     min-height: 695px;
+
+    &::before {
+      .pseudo();
+      left: auto;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: @bg-accent-dark;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+    }
   }
 
   .banner__wrapper {
+    padding: 125px 120px 180px;
     .wrapper-desktop();
   }
 
-  .banner::before {
-    .pseudo();
-    right: 0;
-    width: 50%;
-    height: 695px;
-    background-color: @bg-accent-dark;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+  .banner__heading {
+    margin: 0;
+    width: 450px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .banner__text {
+    margin: 45px 0 0 0;
   }
 }

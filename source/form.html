@@ -7,11 +7,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
-      </a>
+      <div class="page-header__box">
+        <div class="page-header__wrapper wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+          </a>
+          <button class="page-header__toggle page-header__toggle--close" type="button" aria-label="Открыть меню"></button>
+        </div>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -20,7 +24,7 @@
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Подбор программы</a>
+            <a class="site-list__link site-list__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
