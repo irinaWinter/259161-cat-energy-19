@@ -23,47 +23,28 @@
     margin-top: 20px;
   }
 
-  &--benefit::before {
+  &::before {
     .pseudo();
     width: 60px;
     height: 60px;
     left: 0;
-    background-color: @lightgreen;
+    background-color: @bg-accent;
+    .bg-image();
+  }
+
+  &--benefit::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 
   &--quickly::before {
-    .pseudo();
-    width: 60px;
-    height: 60px;
-    left: 0;
-    background-color: @lightgreen;
     background-image: url("../img/advantage-powder@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 
   &--quantity::before {
-    .pseudo();
-    width: 60px;
-    height: 60px;
-    left: 0;
-    background-color: @lightgreen;
     background-image: url("../img/advantage-dining@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 
   &--deadlines::before {
-    .pseudo();
-    width: 60px;
-    height: 60px;
-    left: 0;
-    background-color: @lightgreen;
     background-image: url("../img/advantage-clock@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 }
