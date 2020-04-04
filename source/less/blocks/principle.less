@@ -1,5 +1,6 @@
-.principle {
-  padding: 11px 20px 44px;
+.principle__wrapper {
+  .wrapper-mobile();
+  margin-top: 32px;
 }
 
 .principle__heading {
@@ -46,5 +47,78 @@
 
   &--deadlines::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .principle__wrapper {
+    .wrapper-tablet();
+    margin-top: 32px;
+  }
+
+  .principle__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .principle__item {
+    padding: 100px 0 0;
+    width: 245px;
+    min-height: 228px;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 50px;
+    }
+
+    &::before {
+      top: 0;
+      width: 80px;
+      height: 80px;
+      background-position: 10px 10px;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      height: 228px;
+      font-family: @additional-font;
+      font-size: 281px;
+      line-height: 205px;
+      color: @die;
+    }
+
+    &:nth-child(1)::after {
+      content: "1";
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .principle__wrapper {
+    .wrapper-desktop();
+    margin-top: 70px;
+  }
+
+  .principle__item:nth-child(n + 3) {
+    margin-top: 0;
   }
 }
