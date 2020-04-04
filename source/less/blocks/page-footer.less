@@ -1,12 +1,16 @@
-.page-footer__wrapper {
-  padding: 0 20px;
+.page-footer__box {
   background-color: @die;
+}
+
+.page-footer__logo-box {
+  border-bottom: 1px solid @border-light;
 }
 
 .page-footer__logo {
   display: block;
-  padding: 40px 20px 27px;
-  border-bottom: 1px solid @border-light;
+  .wrapper();
+  padding-top: 40px;
+  padding-bottom: 27px;
   text-align: center;
 
   &:hover,
@@ -22,4 +26,32 @@
 .page-footer__logo-img {
   width: 128px;
   height: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    .wrapper-tablet();
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo-box {
+    border: none;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer__wrapper {
+    .wrapper-desktop();
+  }
 }
