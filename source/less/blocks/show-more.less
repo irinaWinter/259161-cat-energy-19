@@ -1,5 +1,11 @@
-.show-more {
+.show-more__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 25px;
+
 
   &::before {
     .pseudo();
@@ -41,5 +47,35 @@
 
   &:active {
     color: fade(@text-main, 30%);
+  }
+}
+
+@media (min-width: 768px) {
+  .show-more {
+    border: 1px solid @border-lighter;
+  }
+
+  .show-more__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+  }
+
+  .show-more__button {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .show-more__wrapper {
+    padding-bottom: 0;
+  }
+
+  .show-more__text {
+    text-align: center;
+  }
+
+  .show-more__correction {
+    text-align: center;
   }
 }

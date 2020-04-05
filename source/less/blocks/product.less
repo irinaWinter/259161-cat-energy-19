@@ -1,7 +1,8 @@
-.product {
+.product__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  .wrapper-mobile();
 }
 
 .product__box {
@@ -33,4 +34,33 @@
 
 .product__button {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product__value,
+  .product__field {
+    padding: 9px 1px 10px;
+    border-bottom: 1px solid @border;
+  }
+
+  .product__img {
+    margin: -80px auto 0;
+  }
+
+  .product__button {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .product__wrapper {
+    padding: 0;
+    width: auto;
+  }
 }
