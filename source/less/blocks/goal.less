@@ -49,33 +49,34 @@
 }
 
 .goal__name {
-  position: relative;
   margin: 0;
   padding-left: 71px;
-  font-family: @additional-font;
+  color: @text-accent;
   font-weight: 400;
   font-size: 24px;
+  font-family: @additional-font;
   text-transform: uppercase;
-  color: @text-accent;
 }
 
 .goal__text {
-  margin: 35px 0 17px 0;
+  margin: 35px 0 0;
   padding-bottom: 23px;
   border-bottom: 1px solid @border-light;
 }
 
 .goal__link {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 20px;
-  font-family: @additional-font;
-  font-size: 16px;
-  text-transform: uppercase;
   color: @text-accent;
+  font-size: 16px;
+  font-family: @additional-font;
+  text-transform: uppercase;
 
   &::after {
     .pseudo();
-    top: 7px;
+    top: 5px;
     right: -35px;
     width: 24px;
     height: 11px;
@@ -136,10 +137,12 @@
   }
 
   .goal__text {
+    padding-bottom: 0;
     border-bottom: none;
   }
 
   .goal__link {
+    margin-top: 60px;
     font-size: 20px;
 
     &::after {
@@ -200,3 +203,5 @@
     }
   }
 }
+
+// Проверено
