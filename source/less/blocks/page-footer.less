@@ -2,24 +2,22 @@
   background-color: @die;
 }
 
-.page-footer__logo-box {
-  border-bottom: 1px solid @border-light;
-}
-
 .page-footer__logo {
   display: block;
-  .wrapper();
   padding-top: 40px;
   padding-bottom: 27px;
+  border-bottom: 1px solid @border-light;
   text-align: center;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
+  &:not(&--index) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
 
-  &:active {
-    opacity: 0.6;
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -30,7 +28,6 @@
 
 @media (min-width: 768px) {
   .page-footer__wrapper {
-    .wrapper-tablet();
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -39,19 +36,12 @@
     align-items: center;
   }
 
-  .page-footer__logo-box {
-    border: none;
-  }
-
   .page-footer__logo {
     margin: 0;
     padding: 0;
     width: 128px;
+    border: none;
   }
 }
 
-@media (min-width: 1300px) {
-  .page-footer__wrapper {
-    .wrapper-desktop();
-  }
-}
+// Проверено
