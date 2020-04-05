@@ -1,6 +1,5 @@
 .banner {
   position: relative;
-  box-sizing: border-box;
 
   &::before {
     .pseudo();
@@ -20,28 +19,27 @@
 .banner__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  padding: 30px 20px 10px;
   .wrapper-mobile();
+  padding-top: 30px;
 }
 
 .banner__heading {
   margin: 0;
-  text-align: center;
-  font-family: @additional-font;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
   color: @text-light;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: @additional-font;
+  line-height: 36px;
+  text-align: center;
 }
 
 .banner__text {
   margin: 22px 0 0 0;
-  text-align: center;
-  font-family: @additional-font;
-  font-size: 14px;
-  text-transform: uppercase;
   color: @text-light;
+  font-size: 14px;
+  font-family: @additional-font;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .banner__img {
@@ -53,7 +51,7 @@
 
 .banner__button {
   margin-top: 3px;
-  padding: 12px 12px 12px;
+  padding: 12px;
   font-size: 14px;
 }
 
@@ -73,19 +71,18 @@
   }
 
   .banner__heading {
-    text-align: left;
+    color: @text-accent;
+    font-weight: 400;
     font-size: 60px;
     line-height: 60px;
-    font-weight: 400;
-    color: @text-accent;
+    text-align: left;
   }
 
   .banner__text {
-    margin: 22px 0 0 0;
-    text-align: left;
-    font-size: 20px;
-    text-transform: uppercase;
+    margin: 50px 0 0 0;
     color: @text-accent;
+    font-size: 20px;
+    text-align: left;
   }
 
   .banner__img {
@@ -119,7 +116,7 @@
   }
 
   .banner__wrapper {
-    .wrapper-desktop();
+    width: 1300px;
     padding: 100px 80px 50px;
   }
 
@@ -138,3 +135,5 @@
     margin-left: 50px;
   }
 }
+
+// Проверено
