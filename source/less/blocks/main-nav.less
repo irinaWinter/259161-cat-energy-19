@@ -1,7 +1,14 @@
-.main-nav {
+.main-nav__list {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  .list-reset();
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -9,3 +16,5 @@
     max-width: 50%;
   }
 }
+
+// Проверено

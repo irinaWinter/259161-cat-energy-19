@@ -3,14 +3,19 @@
 }
 
 .page-header__wrapper {
-  position: relative;
-  padding: 11px 20px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 38px;
 }
 
 .page-header__toggle {
-  position: absolute;
-  top: 23px;
-  right: 23px;
   cursor: pointer;
 }
 
@@ -42,8 +47,23 @@
     width: auto;
   }
 
+  .page-header__logo-image {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__main-nav {
+    margin-left: 36px;
   }
 }
 
@@ -52,3 +72,5 @@
     .wrapper-desktop();
   }
 }
+
+// Проверено
