@@ -1,30 +1,43 @@
 .copyright {
-  padding: 29px 0;
+  padding-top: 29px;
+  padding-bottom: 29px;
 }
 
 .copyright__link {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 16px;
   color: @text-main;
+  font-size: 16px;
 
-  &::before {
+  &::after {
     .pseudo();
     right: 0;
     width: 27px;
     height: 34px;
     background-image: url("../img/htmlacademy.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    .bg-image();
   }
 
-  &:hover::before {
+  &:hover::after {
     background-image: url("../img/htmlacademy-green.svg");
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .copyright__link::after {
+    position: static;
+    margin-top: 10px;
+    margin-left: 20px;
   }
 }

@@ -1,6 +1,12 @@
 .heading {
-  font-family: @additional-font;
-  font-size: 36px;
-  font-weight: 400;
   color: @text-accent;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: @additional-font;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 60px;
+  }
 }

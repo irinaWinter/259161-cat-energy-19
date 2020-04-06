@@ -7,7 +7,7 @@
   display: flex;
   align-items: top;
   padding-bottom: 32px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid @border;
 
   &::after {
     .pseudo;
@@ -16,28 +16,26 @@
     right: -20px;
     height: 3px;
     width: 100%;
-    background-color: @lightgreen;
+    background-color: @bg-accent;
   }
 }
 
 .additional-goods__heading {
   margin: 0;
   padding-right: 22px;
-  background-color: #ffffff;
+  background-color: @bg-light;
   font-family: @additional-font;
   font-size: 24px;
   font-weight: 400;
 }
 
 .additional-goods__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  .list-reset();
 }
 
 .additional-goods__item {
   padding: 12px 0 18px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid @border;
 }
 
 .additional-goods__name {

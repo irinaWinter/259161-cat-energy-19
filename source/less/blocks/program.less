@@ -22,7 +22,7 @@
 .program__fieldset {
   padding: 26px 17px;
   border: none;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid @border-lightest;
 }
 
 .program__fieldset--about {
@@ -55,7 +55,7 @@
     right: -20px;
     height: 3px;
     width: 100%;
-    background-color: @lightgreen;
+    background-color: @bg-accent;
   }
 }
 
@@ -63,7 +63,7 @@
   width: min-content;
   margin: 0;
   padding-right: 22px;
-  background-color: #ffffff;
+  background-color: @bg-light;
   font-family: @additional-font;
   font-size: 24px;
   line-height: 24px;
@@ -71,9 +71,7 @@
 }
 
 .program__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  .list-reset();
 }
 
 .program__list--contacts {
@@ -123,12 +121,12 @@
   margin-left: 15px;
   padding: 14px 14px 11px;
   width: 170px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid @border-lighter;
   text-transform: uppercase;
   outline: none;
 
   &--error {
-    border-color: #ff8282;
+    border-color: @border-error;
   }
 
   &::placeholder {
@@ -136,11 +134,11 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: @border;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: @border-focus;
   }
 }
 
@@ -187,7 +185,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #d8d8d8;
+    border: 1px solid @form-element;
     cursor: pointer;
   }
 
@@ -197,12 +195,12 @@
     left: 11px;
     width: 12px;
     height: 12px;
-    background-color: @lightgreen;
+    background-color: @bg-accent;
     border-radius: 50%;
   }
 
   &:hover::before {
-    border-color: #bcbcbc;
+    border-color: @form-element-hover;
   }
 
   &:active::before,
@@ -221,7 +219,7 @@
     left: 2px;
     width: 30px;
     height: 30px;
-    border: 1px solid #d8d8d8;
+    border: 1px solid @form-element;
     cursor: pointer;
   }
 
@@ -232,12 +230,11 @@
     width: 21px;
     height: 16px;
     background-image: url("../img/icon-tick.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    .bg-image();
   }
 
   &:hover::before {
-    border-color: #bcbcbc;
+    border-color: @form-element-hover;
   }
 
   &:active::before,
@@ -251,7 +248,7 @@
   padding: 11px 14px;
   width: 100%;
   min-height: 149px;
-  border-color: #e6e6e6;
+  border-color: @border-lighter;
   resize: vertical;
   font-family: @additional-font;
   font-size: 16px;
@@ -263,11 +260,11 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: @border;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: @border-focus;
   }
 }
 

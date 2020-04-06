@@ -1,5 +1,5 @@
 .principle {
-  padding: 11px 20px 44px;
+  margin-top: 32px;
 }
 
 .principle__heading {
@@ -23,47 +23,99 @@
     margin-top: 20px;
   }
 
-  &--benefit::before {
+  &::before {
     .pseudo();
     width: 60px;
     height: 60px;
     left: 0;
-    background-color: @lightgreen;
+    background-color: @bg-accent;
+    .bg-image();
+  }
+
+  &--benefit::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 
   &--quickly::before {
-    .pseudo();
-    width: 60px;
-    height: 60px;
-    left: 0;
-    background-color: @lightgreen;
     background-image: url("../img/advantage-powder@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 
   &--quantity::before {
-    .pseudo();
-    width: 60px;
-    height: 60px;
-    left: 0;
-    background-color: @lightgreen;
     background-image: url("../img/advantage-dining@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 
   &--deadlines::before {
-    .pseudo();
-    width: 60px;
-    height: 60px;
-    left: 0;
-    background-color: @lightgreen;
     background-image: url("../img/advantage-clock@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .principle {
+    margin-top: 32px;
+  }
+
+  .principle__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .principle__item {
+    padding: 100px 0 0;
+    width: 245px;
+    min-height: 228px;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 50px;
+    }
+
+    &::before {
+      top: 0;
+      width: 80px;
+      height: 80px;
+      background-position: 10px 10px;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      height: 228px;
+      color: @die;
+      font-size: 281px;
+      line-height: 205px;
+      font-family: @additional-font;
+    }
+
+    &:nth-child(1)::after {
+      content: "1";
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .principle {
+    margin-top: 70px;
+  }
+
+  .principle__item:nth-child(n + 3) {
+    margin-top: 0;
   }
 }
