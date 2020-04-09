@@ -1,32 +1,69 @@
 .gift {
-  padding: 0 20px 35px;
-}
-
-.gift__box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
   padding: 188px 55px 43px;
   background-color: @bg-accent;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-
-.gift__text {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  color: @text-light;
 
   &::before {
     .pseudo();
-    top: -122px;
+    top: 60px;
     width: 55px;
     height: 60px;
     background-image: url("../img/icon-gift.svg");
     .bg-image();
+  }
+}
+
+.gift__text {
+  margin: 0;
+  color: @text-light;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .gift {
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 70px;
+    padding: 70px;
+    min-height: 200px;
+
+    &::before {
+      top: initial;
+      left: 90px;
+    }
+  }
+
+  .gift__text {
+    width: 160px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gift {
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
+    padding: 45px;
+    width: 245px;
+
+    &::before {
+      top: 65px;
+      left: initial;
+    }
+  }
+
+  .gift__text {
+    text-align: center;
   }
 }

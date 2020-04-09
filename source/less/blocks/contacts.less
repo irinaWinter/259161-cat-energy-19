@@ -1,21 +1,26 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  background-color: @die;
 }
 
-.contacts--catalog,
-.contacts--footer {
-  background-color: @die;
+.contacts--index {
+  background-color: @bg-light;
+}
+
+.contacts__wrapper {
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .contacts__box {
   display: flex;
   justify-content: space-between;
-  padding: 28px 19px;
 }
 
 .contacts__cooperation {
   margin: 0;
+  width: min-content;
   font-family: @additional-font;
   font-size: 16px;
   line-height: 20px;
@@ -24,10 +29,40 @@
 }
 
 .contacts__text {
+  width: min-content;
   margin: 0 0 0 18px;
   line-height: 20px;
 }
 
 .contacts__map-image {
   align-self: center;
+}
+
+@media (min-width: 768px) {
+  .contacts__text {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contacts {
+    position: relative;
+    height: 360px;
+  }
+
+  .contacts__wrapper {
+    padding: 0;
+  }
+
+  .contacts__box {
+    position: absolute;
+    top: 95px;
+    padding: 70px 65px;
+    width: 570px;
+    background-color: @bg-light;
+  }
+
+  .contacts__text {
+    text-align: left;
+  }
 }
