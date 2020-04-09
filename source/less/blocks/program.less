@@ -83,6 +83,8 @@
 }
 
 .program__label {
+  display: flex;
+  align-items: center;
   color: @text-accent;
   text-transform: uppercase;
   cursor: pointer;
@@ -151,29 +153,18 @@
   }
 }
 
-.program__radio {
-  margin-right: 47px;
+.program__radio + .program__label {
+  padding-left: 47px;
   position: relative;
 
   &::before {
     .pseudo();
-    top: -14px;
     left: 2px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid @form-element;
     cursor: pointer;
-  }
-
-  &:checked::after {
-    .pseudo();
-    top: -5px;
-    left: 11px;
-    width: 12px;
-    height: 12px;
-    background-color: @bg-accent;
-    border-radius: 50%;
   }
 
   &:hover::before {
@@ -186,28 +177,28 @@
   }
 }
 
-.program__checkbox {
-  margin-right: 47px;
+.program__radio:checked + .program__label {
+  &::after {
+    .pseudo();
+    left: 11px;
+    width: 12px;
+    height: 12px;
+    background-color: @bg-accent;
+    border-radius: 50%;
+  }
+}
+
+.program__checkbox + .program__label {
+  padding-left: 47px;
   position: relative;
 
   &::before {
     .pseudo();
-    top: -14px;
     left: 2px;
     width: 30px;
     height: 30px;
     border: 1px solid @form-element;
     cursor: pointer;
-  }
-
-  &:checked::after {
-    .pseudo();
-    top: -5px;
-    left: 7px;
-    width: 21px;
-    height: 16px;
-    background-image: url("../img/icon-tick.svg");
-    .bg-image();
   }
 
   &:hover::before {
@@ -217,6 +208,17 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+.program__checkbox:checked + .program__label {
+  &::after {
+    .pseudo();
+    left: 7px;
+    width: 21px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    .bg-image();
   }
 }
 
