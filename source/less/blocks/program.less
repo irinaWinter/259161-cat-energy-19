@@ -227,7 +227,8 @@
   padding: 11px 14px;
   width: 100%;
   min-height: 149px;
-  border-color: @border-lighter;
+  border: none;
+  box-shadow: 0 0 0 1px @border-lighter;
   resize: vertical;
   font-size: 16px;
   font-family: @additional-font;
@@ -239,11 +240,11 @@
   }
 
   &:hover {
-    border-color: @border;
+    box-shadow: 0 0 0 1px @border;
   }
 
   &:focus {
-    border-color: @border-focus;
+    box-shadow: 0 0 0 1px @border-focus;
   }
 }
 
