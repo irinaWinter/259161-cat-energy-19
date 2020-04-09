@@ -12,11 +12,16 @@
   }
 }
 
+.subtitle__wrapper {
+  &::first-line {
+    background-color: @bg-light;
+  }
+}
+
 .subtitle__text {
   display: inline;
   margin: 0;
   padding-right: 22px;
-  background-color: @bg-light;
   font-weight: 400;
   font-size: 24px;
   font-family: @additional-font;
@@ -36,5 +41,11 @@
     padding-right: 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .subtitle__wrapper {
+    padding: 0;
   }
 }
