@@ -15,19 +15,6 @@
   height: 38px;
 }
 
-.page-header__toggle {
-  cursor: pointer;
-}
-
-.page-header__toggle--close {
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  background-image: url("../img/icon-close.svg");
-  .bg-image();
-  border: none;
-}
-
 @media (min-width: 768px) {
   .page-header {
     .wrapper-tablet();
@@ -35,7 +22,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 32px;
   }
 
   .page-header__box {
@@ -73,5 +60,6 @@
   .page-header {
     position: relative;
     .wrapper-desktop();
+    padding-top: 64px;
   }
 }
