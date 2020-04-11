@@ -10,17 +10,17 @@
 
 .goal__item {
   position: relative;
-  padding: 36px 20px 20px;
+  padding: 37px 20px 20px;
   background-color: @die;
 
   &:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   &::before {
     .pseudo();
-    top: 20px;
-    left: 25px;
+    top: 27px;
+    left: 22px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -29,8 +29,8 @@
 
   &--weight-loss::after {
     .pseudo();
-    top: 17px;
-    left: 34px;
+    top: 24px;
+    left: 31px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -39,7 +39,7 @@
 
   &--weight-set::after {
     .pseudo();
-    top: 32px;
+    top: 37px;
     left: 14px;
     width: 67px;
     height: 28px;
@@ -68,7 +68,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 20px;
+  margin-top: 19px;
   color: @text-accent;
   font-size: 16px;
   font-family: @additional-font;
@@ -76,7 +76,7 @@
 
   &::after {
     .pseudo();
-    top: 5px;
+    top: 4px;
     right: -35px;
     width: 24px;
     height: 11px;
@@ -102,11 +102,15 @@
   }
 
   .goal__item {
-    padding: 80px 320px 60px 60px;
+    padding: 75px 280px 60px 53px;
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
 
     &::before {
       .pseudo();
-      top: 90px;
+      top: 92px;
       left: auto;
       right: 62px;
       width: 200px;
@@ -116,16 +120,20 @@
     &--weight-loss::after {
       top: 80px;
       left: auto;
-      right: 90px;
+      right: 92px;
       width: 140px;
       height: 194px;
+    }
+
+    &--weight-set {
+      padding-right: 311px;
     }
 
     &--weight-set::after {
       .pseudo();
       top: 135px;
       left: auto;
-      right: 30px;
+      right: 28px;
       width: 268px;
       height: 112px;
     }
@@ -137,23 +145,25 @@
   }
 
   .goal__text {
+    margin-top: 21px;
     padding-bottom: 0;
     border-bottom: none;
   }
 
   .goal__link {
-    margin-top: 60px;
+    margin-top: 56px;
     font-size: 20px;
 
     &::after {
-      top: 10px;
+      top: 6px;
+      right: -46px;
     }
   }
 }
 
 @media (min-width: 1300px) {
   .goal {
-    margin-top: 80px;
+    margin-top: 82px;
   }
 
   .goal__list {
@@ -164,7 +174,7 @@
   }
 
   .goal__item {
-    padding: 83px 50px 60px;
+    padding: 74px 50px 60px 52px;
     width: 570px;
 
     &:not(:first-child) {
@@ -173,7 +183,7 @@
 
     &::before {
       top: 47px;
-      left: 50px;
+      left: 52px;
       width: 100px;
       height: 100px;
     }
@@ -181,7 +191,7 @@
     &--weight-loss::after {
       .pseudo();
       top: 41px;
-      left: 65px;
+      left: 66px;
       width: 70px;
       height: 97px;
     }
@@ -193,13 +203,22 @@
       width: 134px;
       height: 56px;
     }
+  }
 
-    .goal__name {
-      padding-left: 160px;
-    }
+  .goal__name {
+    padding-left: 162px;
+  }
 
-    .goal__text {
-      margin-top: 80px;
+  .goal__text {
+    margin-top: 71px;
+  }
+
+  .goal__link {
+    margin-top: 31px;
+
+    &::after {
+      top: 5px;
+      right: -49px;
     }
   }
 }

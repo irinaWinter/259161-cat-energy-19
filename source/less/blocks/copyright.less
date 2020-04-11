@@ -1,6 +1,6 @@
 .copyright {
   padding-top: 29px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
 }
 
 .copyright__link {
@@ -12,9 +12,10 @@
 
   &::after {
     .pseudo();
-    right: 0;
-    width: 27px;
-    height: 34px;
+    top: -11px;
+    right: -8px;
+    width: 42px;
+    height: 41px;
     background-image: url("../img/htmlacademy.svg");
     .bg-image();
   }
@@ -35,9 +36,14 @@
     width: auto;
   }
 
-  .copyright__link::after {
-    position: static;
-    margin-top: 10px;
-    margin-left: 20px;
+  .copyright__link {
+    padding-right: 50px;
+    padding-bottom: 9px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .copyright__link {
+    padding-bottom: 0;
   }
 }
