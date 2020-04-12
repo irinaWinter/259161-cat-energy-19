@@ -1,6 +1,6 @@
 .example {
-  margin-top: 40px;
-  padding-bottom: 60px;
+  margin-top: 42px;
+  padding-bottom: 34px;
   background-color: @die;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 26px;
+  margin-top: 25px;
 }
 
 .example__result {
@@ -30,7 +30,7 @@
   align-items: center;
   box-sizing: border-box;
   margin: 0 0 15px;
-  padding: 13px 13px 10px;
+  padding: 11px 13px 11px;
   width: 125px;
   border: 1px solid @border;
   border-radius: 3px;
@@ -44,7 +44,7 @@
 }
 
 .example__indicator {
-  margin: 5px 0 -25px;
+  margin: 6px 0 -25px;
   padding: 0 5px;
   width: 87px;
   background-color: @die;
@@ -70,11 +70,19 @@
 
 @media (min-width: 768px) {
   .example {
-    margin-top: 60px;
+    margin-top: 58px;
+    padding-bottom: 0;
+    background-color: @bg-light;
+    border-top: 1px solid #e6e6e6;
   }
 
   .example__wrapper {
     .wrapper-tablet();
+    padding-top: 39px;
+  }
+
+  .example__text {
+    margin-top: 59px;
   }
 
   .example__indicators {
@@ -84,12 +92,13 @@
   }
 
   .example__box {
-    width: 365px;
+    margin-top: 53px;
+    width: 366px;
   }
 
   .example__result {
-    padding: 20px 5px 30px;
-    width: 160px;
+    padding: 15px 5px 25px;
+    width: 162px;
   }
 
   .example__value {
@@ -98,28 +107,37 @@
   }
 
   .example__indicator {
-    margin: 15px 0 -35px;
+    margin: 11px 0 -32px;
     padding: 0 8px;
     width: auto;
+    background-color: @bg-light;
     font-size: 14px;
     line-height: 14px;
   }
 
   .example__cost {
+    margin-top: 38px;
     width: auto;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: right;
   }
 
   .example__price {
     display: block;
   }
+
+  .example__slider {
+    margin-top: 72px;
+  }
 }
 
 @media (min-width: 1300px) {
   .example {
-    margin-top: 220px;
+    margin-top: 218px;
+    padding-bottom: 69px;
+    border-top: none;
+    background: @die;
   }
 
   .example__general-wrapper {
@@ -127,7 +145,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .wrapper-desktop();
-    padding-bottom: 75px;
   }
 
   .example__wrapper {
@@ -137,12 +154,11 @@
   }
 
   .example__heading {
-    margin-top: -130px;
-    margin-bottom: 20px;
+    margin-top: -140px;
   }
 
   .example__text {
-    margin-top: 125px;
+    margin-top: 141px;
   }
 
   .example__indicators {
@@ -150,8 +166,25 @@
     align-items: flex-start;
   }
 
+  .example__box {
+    margin-top: 68px;
+  }
+
   .example__price {
     display: inline;
     margin-left: 60px;
+  }
+
+  .example__indicator {
+    background-color: @die;
+  }
+
+  .example__cost {
+    margin-top: 41px;
+  }
+
+  .example__slider {
+    margin-top: -192px;
+    width: 620px;
   }
 }

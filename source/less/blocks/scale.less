@@ -1,6 +1,6 @@
 .scale {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
   box-sizing: border-box;
   margin: 0 15px;
   padding: 3px 5px;
@@ -13,7 +13,40 @@
 }
 
 .scale__value {
-  width: 50%;
+  position: absolute;
+  margin: 0 5px;
+  width: 35px;
+  height: 6px;
   background-color: @bg-accent;
   border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .scale {
+    margin: 0 22px;
+    width: 430px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .scale__value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    width: 34px;
+    height: 34px;
+    background-color: @bg-light;
+    border: 1px solid @border;
+    border-radius: 50%;
+
+    &::before {
+      .pseudo;
+      width: 8px;
+      height: 8px;
+      background-color: @bg-accent;
+      border-radius: 50%;
+    }
+  }
 }
