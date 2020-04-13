@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
-  padding: 188px 55px 43px;
+  padding: 66px 55px 43px;
   background-color: @bg-accent;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
@@ -12,8 +12,7 @@
   background-repeat: no-repeat;
 
   &::before {
-    .pseudo();
-    top: 60px;
+    content: "";
     width: 55px;
     height: 60px;
     background-image: url("../img/icon-gift.svg");
@@ -22,7 +21,7 @@
 }
 
 .gift__text {
-  margin: 0;
+  margin: 62px 0 0;
   color: @text-light;
   font-size: 16px;
   line-height: 20px;
@@ -31,19 +30,16 @@
 
 @media (min-width: 768px) {
   .gift {
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     margin-top: 70px;
-    padding: 70px;
+    padding: 62px 125px 69px 90px;
     min-height: 200px;
-
-    &::before {
-      top: initial;
-      left: 90px;
-    }
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
   .gift__text {
+    margin-top: 10px;
     width: 160px;
     text-align: left;
   }
@@ -52,18 +48,15 @@
 @media (min-width: 1300px) {
   .gift {
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 0;
-    padding: 45px;
+    padding: 65px 45px 42px;
     width: 245px;
-
-    &::before {
-      top: 65px;
-      left: initial;
-    }
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
   .gift__text {
+    margin-top: 61px;
     text-align: center;
   }
 }
