@@ -32,12 +32,8 @@
     </header>
     <main class="page-main">
       <section class="program">
-        <div class="program__wrapper wrapper">
-          <h1 class="program__heading heading">Подбор программы</h1>
-        </div>
-        <div class="program__wrapper wrapper wrapper--small">
-          <p class="program__instruction">Заполните анкету и мы подберем программу&nbsp;питания для вашего кота</p>
-        </div>
+        <h1 class="program__heading heading wrapper">Подбор программы</h1>
+        <p class="program__instruction wrapper wrapper--small">Заполните анкету и мы подберем<br>программу&nbsp;питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="program__questionnaire">
             <fieldset class="program__fieldset program__fieldset--about">
@@ -58,23 +54,21 @@
               </ul>
             </fieldset>
             <fieldset class="program__fieldset program__fieldset--goal">
-              <legend class="visually-hidden">Цель программы</legend>
-              <div class="program__goal-box">
-                <ul class="program__list program__list--goal">
-                  <li class="program__item program__item--radio">
-                    <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-loss" checked>
-                    <label class="program__label program__label--radio" for="weight-loss">Похудение</label>
-                  </li>
-                  <li class="program__item program__item--radio">
-                    <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-set">
-                    <label class="program__label program__label--radio" for="weight-set">Набор массы</label>
-                  </li>
-                  <li class="program__item program__item--radio">
-                    <input class="visually-hidden program__radio" type="radio" name="goal" id="need-advice">
-                    <label class="program__label program__label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
-                  </li>
-                </ul>
-              </div>
+            <legend class="visually-hidden">Цель программы</legend>
+              <ul class="program__list program__list--goal">
+                <li class="program__item program__item--radio">
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-loss" checked>
+                  <label class="program__label program__label--radio" for="weight-loss">Похудение</label>
+                </li>
+                <li class="program__item program__item--radio">
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-set">
+                  <label class="program__label program__label--radio" for="weight-set">Набор массы</label>
+                </li>
+                <li class="program__item program__item--radio">
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="need-advice">
+                  <label class="program__label program__label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
             </fieldset>
           </div>
           <fieldset class="program__fieldset program__fieldset--contacts">
