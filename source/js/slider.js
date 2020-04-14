@@ -3,7 +3,6 @@ let image_before = document.querySelector('.slider__img--before');
 let image_after = document.querySelector('.slider__img--after');
 let button_before = document.querySelector('.slider__button--before');
 let button_after = document.querySelector('.slider__button--after');
-let scale = document.querySelector('.scale');
 let scale_value = document.querySelector('.scale__value');
 let afterActive = false;
 
