@@ -1,3 +1,11 @@
+.page-footer {
+  margin-top: 35px;
+}
+
+.page-footer--index {
+  margin-top: 0;
+}
+
 .page-footer__box {
   background-color: @die;
 }
@@ -27,12 +35,8 @@
 }
 
 @media (min-width: 768px) {
-  .page-footer {
-    margin-top: 70px;
-  }
-
-  .page-footer--index {
-    margin-top: 0;
+  .page-footer:not(.page-footer--index) {
+    margin-top: 76px;
   }
 
   .page-footer__wrapper {
@@ -49,5 +53,11 @@
     padding: 0;
     width: 128px;
     border: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer:not(.page-footer--index) {
+    margin-top: 85px;
   }
 }
