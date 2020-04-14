@@ -4,6 +4,7 @@ let image_after = document.querySelector('.slider__img--after');
 let button_before = document.querySelector('.slider__button--before');
 let button_after = document.querySelector('.slider__button--after');
 let scale_value = document.querySelector('.scale__value');
+let scale = document.querySelector('.scale');
 let afterActive = false;
 
 function showBefore() {
