@@ -16,7 +16,7 @@
           <button class="page-header__toggle hamburger hamburger--nojs" type="button" aria-label="Открыть меню"><span class="hamburger__item"></span></button>
         </div>
       </div>
-      <nav class="page-header__main-nav main-nav">
+      <nav class="page-header__main-nav main-nav main-nav--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -32,12 +32,8 @@
     </header>
     <main class="page-main">
       <section class="program">
-        <div class="program__wrapper wrapper">
-          <h1 class="program__heading heading">Подбор программы</h1>
-        </div>
-        <div class="program__wrapper wrapper wrapper--small">
-          <p class="program__instruction">Заполните анкету и мы подберем программу&nbsp;питания для вашего кота</p>
-        </div>
+        <h1 class="program__heading heading wrapper">Подбор программы</h1>
+        <p class="program__instruction wrapper wrapper--small">Заполните анкету и мы подберем<br>программу&nbsp;питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="program__questionnaire">
             <fieldset class="program__fieldset program__fieldset--about">
@@ -58,23 +54,21 @@
               </ul>
             </fieldset>
             <fieldset class="program__fieldset program__fieldset--goal">
-              <legend class="visually-hidden">Цель программы</legend>
-              <div class="program__goal-box">
-                <ul class="program__list program__list--goal">
-                  <li class="program__item program__item--radio">
-                    <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-loss" checked>
-                    <label class="program__label program__label--radio" for="weight-loss">Похудение</label>
-                  </li>
-                  <li class="program__item program__item--radio">
-                    <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-set">
-                    <label class="program__label program__label--radio" for="weight-set">Набор массы</label>
-                  </li>
-                  <li class="program__item program__item--radio">
-                    <input class="visually-hidden program__radio" type="radio" name="goal" id="need-advice">
-                    <label class="program__label program__label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
-                  </li>
-                </ul>
-              </div>
+            <legend class="visually-hidden">Цель программы</legend>
+              <ul class="program__list program__list--goal">
+                <li class="program__item program__item--radio">
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-loss" checked>
+                  <label class="program__label program__label--radio" for="weight-loss">Похудение</label>
+                </li>
+                <li class="program__item program__item--radio">
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-set">
+                  <label class="program__label program__label--radio" for="weight-set">Набор массы</label>
+                </li>
+                <li class="program__item program__item--radio">
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="need-advice">
+                  <label class="program__label program__label--radio" for="need-advice">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
             </fieldset>
           </div>
           <fieldset class="program__fieldset program__fieldset--contacts">
@@ -145,11 +139,14 @@
         <div class="contacts__wrapper wrapper wrapper--small">
           <div class="contacts__box">
             <h2 class="visually-hidden">Контакты</h2>
-            <p class="contacts__cooperation">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <p class="contacts__text text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8 Санкт-Петербург</p>
+            <p class="contacts__cooperation">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
+            <p class="contacts__text text">ул.&nbsp;Большая<br>Конюшенная,&nbsp;д.&nbsp;19/8 <span class="contacts__city">Санкт-Петербург</span></p>
           </div>
         </div>
-        <img class="contacts__map-image" src="img/map-mobile.jpg" width="320" height="360" alt="Расположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <div class="contacts__map">
+          <iframe class="contacts__map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e297ad65747b423324f66bdbfa8b0136a63586b50f0f040c1553f4005a8f2c1&amp;source=constructor"></iframe>
+          <img class="contacts__map-image" src="img/map-mobile.jpg" width="320" height="360" alt="Расположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </div>
       </section>
       <div class="page-footer__box">
         <div class="page-footer__wrapper wrapper">

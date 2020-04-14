@@ -1,9 +1,9 @@
 .additional-goods {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .additional-goods__wrapper {
-  margin-top: 20px;
+  margin-top: 31px;
 }
 
 .additional-goods__list {
@@ -11,7 +11,7 @@
 }
 
 .additional-goods__item {
-  padding: 12px 0 18px;
+  padding: 12px 0 17px;
   border-top: 1px solid @border;
   border-bottom: 1px solid @border;
 
@@ -30,8 +30,8 @@
 }
 
 .additional-goods__table {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 11px;
+  font-size: 14px;
 }
 
 .additional-goods__button {
@@ -40,8 +40,12 @@
 }
 
 @media (min-width: 768px) {
+  .additional-goods {
+    margin-top: 69px;
+  }
+
   .additional-goods__wrapper {
-    margin-top: 40px;
+    margin-top: 78px;
   }
 
   .additional-goods__item {
@@ -49,8 +53,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 25px 40px;
+    padding: 18px 36px 27px 37px;
     border: 1px solid @border;
+  }
+
+  .additional-goods__name {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .additional-goods__table {
@@ -62,13 +71,17 @@
   }
 
   .additional-goods__field {
-    width: 95px;
+    width: 92px;
+  }
+
+  .additional-goods__button {
+    margin-top: 26px;
   }
 }
 
 @media (min-width: 1300px) {
   .additional-goods {
-    margin-top: 80px;
+    margin-top: 77px;
   }
 
   .additional-goods__wrapper {
@@ -83,13 +96,23 @@
 
   .additional-goods__item {
     align-items: center;
-    padding: 15px 0;
+    padding: 16px 0;
     border-right: none;
     border-left: none;
   }
 
+  .additional-goods__table {
+    margin-left: auto;
+    width: 290px;
+  }
+
+  .additional-goods__value {
+    text-align: left;
+  }
+
   .additional-goods__button {
     margin-top: 0;
+    margin-left: 36px;
     width: 245px;
   }
 }
