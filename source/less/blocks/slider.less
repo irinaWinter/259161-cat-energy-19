@@ -15,9 +15,9 @@
   width: 320px;
   height: 240px;
   background-color: @die;
+  background-repeat: no-repeat;
 
   &--before {
-    z-index: 1;
     background-image: url("../img/before-mobile@1x.png");
   }
 
@@ -59,7 +59,6 @@
     &--before {
       position: absolute;
       left: 0;
-      z-index: 1;
       background:
         url("../img/before-tablet@1x.png") no-repeat 52% 0,
         linear-gradient(#ffffff 27%, @die 27%, @die 100%);
@@ -107,16 +106,14 @@
   .slider__img {
     &--before {
       background:
-        url("../img/before-desktop@1x.png") no-repeat 44% 0,
-        linear-gradient(#ffffff 30.5%, @die 30.5%, @die 100%);
+        linear-gradient(transparent, transparent),
+        url("../img/before-desktop@1x.png") no-repeat 44% 0;
     }
 
     &--after {
-      position: absolute;
-      right: 0;
       background:
-        url("../img/after-desktop@1x.png") no-repeat 42% 0,
-        linear-gradient(#ffffff 30.5%, #eaeaea 30.5%, #eaeaea 100%);
+        linear-gradient(transparent, transparent),
+        url("../img/after-desktop@1x.png") no-repeat 42% 0;
     }
   }
 }
