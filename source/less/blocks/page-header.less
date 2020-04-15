@@ -17,12 +17,12 @@
 
 @media (min-width: 768px) {
   .page-header {
-    .wrapper-tablet();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
+    .wrapper-tablet();
+    padding-top: 24px;
   }
 
   .page-header__box {
@@ -47,6 +47,11 @@
     }
   }
 
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -60,6 +65,11 @@
   .page-header {
     position: relative;
     .wrapper-desktop();
-    padding-top: 64px;
+    padding-top: 53px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

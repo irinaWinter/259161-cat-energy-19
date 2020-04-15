@@ -13,6 +13,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 640px auto;
+    }
   }
 }
 
@@ -51,14 +56,13 @@
 }
 
 .banner__button {
-  margin-top: 3px;
   padding: 12px;
   font-size: 14px;
 }
 
 @media (min-width: 768px) {
   .banner {
-    min-height: 874px;
+    min-height: 863px;
 
     &::before {
       background-color: transparent;
@@ -69,7 +73,7 @@
   .banner__wrapper {
     align-items: flex-start;
     margin: 0 auto;
-    padding: 64px 118px 0;
+    padding: 54px 118px 0;
     width: 768px;
   }
 
@@ -91,11 +95,15 @@
   .banner__img {
     z-index: -1;
     margin-top: 20px;
-    margin-bottom: -290px;
+    margin-bottom: -614px;
+    margin-left: -89px;
+    max-width: initial;
+    width: 709px;
+    height: 609px;
   }
 
   .banner__button {
-    margin-top: 47px;
+    margin-top: 28px;
     padding: 14px;
     min-width: 245px;
     font-size: 20px;
@@ -114,17 +122,23 @@
       width: 50%;
       height: 100vh;
       background-color: @bg-accent-dark;
-      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: auto 100%;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 
   .banner__wrapper {
     width: 1300px;
-    padding: 114px 120px 50px;
+    padding: 106px 120px 50px;
   }
 
   .banner__heading {
+    z-index: 1;
     margin: 0;
     width: 450px;
     font-size: 60px;
@@ -132,15 +146,19 @@
   }
 
   .banner__text {
+    z-index: 1;
     margin: 40px 0 0 0;
   }
 
   .banner__img {
-    margin-top: -85px;
-    margin-left: 80px;
+    margin-top: -263px;
+    margin-left: 370px;
+    margin-bottom: -222px;
+    width: 552px;
+    height: 499px;
   }
 
   .banner__button {
-    margin-top: 157px;
+    margin-top: 34px;
   }
 }
