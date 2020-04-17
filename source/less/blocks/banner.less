@@ -60,7 +60,7 @@
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .banner {
     min-height: 863px;
 
@@ -74,7 +74,7 @@
     align-items: flex-start;
     margin: 0 auto;
     padding: 54px 118px 0;
-    width: 768px;
+    width: @tablet-width;
   }
 
   .banner__heading {
@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: @desktop-width) {
   .banner {
     position: static;
     min-height: calc(100vh - 110px);
@@ -134,7 +134,7 @@
   }
 
   .banner__wrapper {
-    width: 1300px;
+    width: @desktop-width;
     padding: 106px 120px 50px;
   }
 
