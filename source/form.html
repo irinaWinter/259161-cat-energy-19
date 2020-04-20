@@ -161,20 +161,34 @@
       </section>
       <div class="page-footer__box">
         <div class="page-footer__wrapper wrapper">
-          <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
+          <a class="page-footer__logo page-footer__logo--index" href="index.html" aria-label="Кэт энерджи">
+            <svg class="page-footer__logo-img" width="128" height="24" role="img">
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
+            </svg>
           </a>
           <section class="socials">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="socials__list">
               <li class="socials__item">
-                <a class="socials__link socials__link--vk" href="">Вконтакте</a>
+                <a class="socials__link" href="" aria-label="Вконтакте">
+                  <svg class="socials__link-image socials__link-image--vk" fill="currentColor" role="img">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link socials__link--insta" href="">Инстраграм</a>
+                <a class="socials__link" href="" aria-label="Инстаграм">
+                  <svg class="socials__link-image socials__link-image--insta" fill="currentColor" role="img">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
+                </a>
               </li>
               <li class="socials__item">
-                <a class="socials__link socials__link--fb" href="">Фейсбук</a>
+                <a class="socials__link" href="" aria-label="Фейсбук">
+                  <svg class="socials__link-image socials__link-image--fb" fill="currentColor" role="img">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </section>

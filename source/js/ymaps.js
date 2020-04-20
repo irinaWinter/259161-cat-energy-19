@@ -10,7 +10,9 @@ ymaps.ready(function () {
     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
   ),
 
-  myPlacemark = new ymaps.Placemark(piter_map.getCenter(), {
+  myPlacemark = new ymaps.Placemark([59.938572, 30.320009], {
+
+
     hintContent: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург',
   }, {
 
@@ -23,7 +25,7 @@ ymaps.ready(function () {
     iconImageSize: [113, 95],
     // Смещение левого верхнего угла иконки относительно
     // её "ножки" (точки привязки).
-    iconImageOffset: [-5, -60]
+    iconImageOffset: [-5, -38]
   });
 
   piter_map.geoObjects.add(myPlacemark)
