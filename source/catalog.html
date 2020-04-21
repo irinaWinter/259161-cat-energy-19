@@ -6,6 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/picturefill.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=451a6034-63d0-4b76-8f23-e162769e3aff&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <header class="page-header">
@@ -333,9 +334,12 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e297ad65747b423324f66bdbfa8b0136a63586b50f0f040c1553f4005a8f2c1&amp;source=constructor"></iframe>
+          <div class="contacts__map-interactive" id="map"></div>
           <div class="contacts__map-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
               <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Расположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
@@ -386,6 +390,6 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/ymaps.js"></script>
   </body>
 </html>

@@ -1,32 +1,44 @@
 ymaps.ready(function () {
-  var piter_map = new ymaps.Map('map', {
-    center: [59.938572, 30.320009],
-    zoom: 17
-  }),
+  var imageSize = [62, 53];
+  var imageOffset = [-31, -53];
+  var center = [59.938635, 30.323118];
 
+  if (document.documentElement.clientWidth > 768) {
+    imageSize = [124, 106];
+    imageOffset = [-62, -106];
+  }
+
+  if (document.documentElement.clientWidth > 1300) {
+    center = [59.938802, 30.319973];
+  }
+
+  var myMap = new ymaps.Map('map', {
+    center: center,
+    zoom: 17
+  }, {
+    searchControlProvider: 'yandex#search'
+  }),
 
   // Создаём макет содержимого.
   MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
   ),
 
-  myPlacemark = new ymaps.Placemark([59.938572, 30.320009], {
-
-
+  myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
     hintContent: 'ул. Большая Конюшенная, д. 19/8 Санкт-Петербург',
+    balloonContent: 'Это красивая метка'
   }, {
-
     // Опции.
     // Необходимо указать данный тип макета.
     iconLayout: 'default#image',
     // Своё изображение иконки метки.
-    iconImageHref: '../img/map-pin.png',
+    iconImageHref: 'img/map-pin.png',
     // Размеры метки.
-    iconImageSize: [113, 95],
+    iconImageSize: imageSize,
     // Смещение левого верхнего угла иконки относительно
     // её "ножки" (точки привязки).
-    iconImageOffset: [-5, -38]
+    iconImageOffset: imageOffset
   });
 
-  piter_map.geoObjects.add(myPlacemark)
+  myMap.geoObjects.add(myPlacemark)
 });
