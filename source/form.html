@@ -6,6 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=451a6034-63d0-4b76-8f23-e162769e3aff&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
@@ -47,11 +48,11 @@
               <ul class="program__list">
                 <li class="program__item">
                   <label class="program__label" for="name">Имя:*</label>
-                  <input class="program__input" type="text" name="name" id="name" placeholder="Барсик" required>
+                  <input class="program__input" type="text" name="name" id="name" placeholder="Барсик">
                 </li>
                 <li class="program__item">
                   <label class="program__label" for="weight">Вес(кг):*</label>
-                  <input class="program__input" type="number" name="weight" id="weight" placeholder="7">
+                  <input class="program__input" type="number" min="0" name="weight" id="weight" placeholder="7">
                 </li>
                 <li class="program__item">
                   <label class="program__label" for="age">Возраст (лет)</label>
@@ -87,11 +88,11 @@
               <ul class="program__list program__list--contacts">
                 <li class="program__item">
                   <label class="program__label" for="email">E-mail:*</label>
-                  <input class="program__input program__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="program__input program__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
                 </li>
                 <li class="program__item program__item--phone-number">
                   <label class="program__label" for="telephone">Телефон:*</label>
-                  <input class="program__input program__input--phone-number" type="tel" name="telephone" id="telephone" placeholder="8(960)900-60-90" required>
+                  <input class="program__input program__input--phone-number" type="tel" name="telephone" id="telephone" placeholder="8(960)900-60-90">
                 </li>
               </ul>
             </div>
@@ -207,5 +208,6 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/ymaps.js"></script>
+    <script src="js/error.js"></script>
   </body>
 </html>
