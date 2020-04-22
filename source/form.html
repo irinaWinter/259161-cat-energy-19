@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=451a6034-63d0-4b76-8f23-e162769e3aff&lang=ru_RU" type="text/javascript"></script>
   </head>
@@ -51,7 +51,7 @@
                 </li>
                 <li class="program__item">
                   <label class="program__label" for="weight">Вес(кг):*</label>
-                  <input class="program__input" type="number" min="0" value="7" name="weight" id="weight" placeholder="7">
+                  <input class="program__input" type="number" min="0" name="weight" id="weight" placeholder="7">
                 </li>
                 <li class="program__item">
                   <label class="program__label" for="age">Возраст (лет)</label>
@@ -63,7 +63,7 @@
             <legend class="visually-hidden">Цель программы</legend>
               <ul class="program__list program__list--goal">
                 <li class="program__item program__item--radio">
-                  <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-loss" checked>
+                  <input class="visually-hidden program__radio" type="radio" name="goal" id="weight-loss" checked="">
                   <label class="program__label program__label--radio" for="weight-loss">Похудение</label>
                 </li>
                 <li class="program__item program__item--radio">
@@ -115,7 +115,7 @@
             <div class="program__wrapper wrapper wrapper--small">
               <ul class="program__list program__list--additionally">
                 <li class="program__item program__item--checkbox">
-                  <input class="visually-hidden program__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+                  <input class="visually-hidden program__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked="">
                   <label class="program__label program__label--checkbox" for="sugar-substitute">Сахарозаменитель</label>
                 </li>
                 <li class="program__item program__item--checkbox">
