@@ -1,11 +1,11 @@
-let example = document.querySelector('.example');
-let image_before = document.querySelector('.slider__img--before');
-let image_after = document.querySelector('.slider__img--after');
-let button_before = document.querySelector('.slider__button--before');
-let button_after = document.querySelector('.slider__button--after');
-let scale_value = document.querySelector('.scale__value');
-let scale = document.querySelector('.scale');
-let afterActive = false;
+var example = document.querySelector('.example');
+var image_before = document.querySelector('.slider__img--before');
+var image_after = document.querySelector('.slider__img--after');
+var button_before = document.querySelector('.slider__button--before');
+var button_after = document.querySelector('.slider__button--after');
+var scale_value = document.querySelector('.scale__value');
+var scale = document.querySelector('.scale');
+var afterActive = false;
 
 function showBefore() {
   if (afterActive) {

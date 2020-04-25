@@ -1,5 +1,5 @@
-let hamburger = document.querySelector('.hamburger');
-let menu = document.querySelector('.main-nav');
+var hamburger = document.querySelector('.hamburger');
+var menu = document.querySelector('.main-nav');
 
 hamburger.classList.remove('hamburger--nojs');
 menu.classList.remove('main-nav--nojs');
