@@ -50,7 +50,7 @@ gulp.task("compress", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/{icon-*,logo-footer}.svg")
+  return gulp.src("source/img/{*-sprite,logo-footer}.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
