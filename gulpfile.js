@@ -9,6 +9,7 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-htmlmin");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -29,6 +30,12 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("minify", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("sprite", function () {
@@ -95,7 +102,9 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"));
+  "html",
+  "minify"
+));
 
 gulp.task("refresh", function (done) {
   server.reload();
