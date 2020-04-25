@@ -7,26 +7,30 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: @text-main;
   font-size: 16px;
 
-  &::after {
-    .pseudo();
-    top: -11px;
-    right: -8px;
-    width: 42px;
-    height: 41px;
-    background-image: url("../img/htmlacademy.svg");
-    .bg-image();
-  }
-
-  &:hover::after {
-    background-image: url("../img/htmlacademy-green.svg");
+  &:hover {
+    .copyright__image {
+      color: @bg-accent;
+    }
   }
 
   &:active {
     opacity: 0.3;
+
+    .copyright__image {
+      opacity: 0.3;
+    }
   }
+}
+
+.copyright__image {
+  margin-left: 23px;
+  width: 27px;
+  height: 34px;
+  color: #666666;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,7 +41,6 @@
   }
 
   .copyright__link {
-    padding-right: 50px;
     padding-bottom: 9px;
   }
 }
