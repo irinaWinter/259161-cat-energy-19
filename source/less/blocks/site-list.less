@@ -20,7 +20,10 @@
 @media (min-width: @tablet-width) {
   .site-list__item {
     border-bottom: none;
-    margin-right: 36px;
+
+    &:not(:first-child) {
+      margin-left: 36px;
+    }
   }
 
   .site-list__link,
@@ -47,6 +50,10 @@
 @media (min-width: @desktop-width) {
   .site-list__item {
     margin-right: 37px;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
   }
 
   .site-list__link,
