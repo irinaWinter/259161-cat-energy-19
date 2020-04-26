@@ -40,8 +40,6 @@
 }
 
 .program__legend-box {
-  // display: flex;
-  // align-items: top;
   width: 100%;
 }
 
@@ -97,11 +95,10 @@
   &:hover::before {
     border-color: @form-element-hover;
   }
+}
 
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
-  }
+.program__radio:focus + .program__label::before {
+  border-color: @form-element-hover;
 }
 
 .program__radio:checked + .program__label::after {
@@ -137,11 +134,10 @@
   &:hover::before {
     border-color: @form-element-hover;
   }
+}
 
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
-  }
+.program__checkbox:focus + .program__label::before {
+  border-color: @form-element-hover;
 }
 
 .program__checkbox:checked + .program__label::after {
@@ -152,6 +148,11 @@
   background-image: url("../img/icon-tick.svg");
   .bg-image();
 }
+
+.program__checkbox:active + .program__label--checkbox {
+  opacity: 0.3;
+}
+
 // Checkbox [END]
 
 .program__label {
@@ -163,7 +164,8 @@
 }
 
 .program__label--radio:active,
-.program__label--checkbox:active {
+.program__label--checkbox:active,
+.program__checkbox:active + .program__label--checkbox {
   opacity: 0.3;
 }
 
