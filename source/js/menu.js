@@ -1,10 +1,10 @@
-let hamburger = document.querySelector('.hamburger');
-let menu = document.querySelector('.main-nav');
+var hamburger = document.querySelector(".hamburger");
+var menu = document.querySelector(".main-nav");
 
-hamburger.classList.remove('hamburger--nojs');
-menu.classList.remove('main-nav--nojs');
+hamburger.classList.remove("hamburger--nojs");
+menu.classList.remove("main-nav--nojs");
 
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('hamburger--close');
-  menu.classList.toggle('main-nav--opened');
+hamburger.addEventListener("click", function() {
+  hamburger.classList.toggle("hamburger--close");
+  menu.classList.toggle("main-nav--opened");
 });

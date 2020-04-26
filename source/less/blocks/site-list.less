@@ -48,8 +48,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-list__item:not(:first-child) {
-    margin-left: 34px;
+  .site-list__item {
+    margin-right: 37px;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
   }
 
   .site-list__link,

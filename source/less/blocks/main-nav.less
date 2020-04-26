@@ -4,6 +4,14 @@
   }
 }
 
+.main-nav--opened:not(.main-nav--nojs) {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  background-color: @bg-light;
+}
+
 .main-nav--nojs,
 .main-nav--opened {
   display: block;
@@ -19,6 +27,7 @@
   .main-nav__list {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: flex-end;
   }
 }
 

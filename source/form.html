@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=451a6034-63d0-4b76-8f23-e162769e3aff&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=451a6034-63d0-4b76-8f23-e162769e3aff&lang=ru_RU"></script>
   </head>
   <body>
     <header class="page-header">
@@ -91,7 +93,7 @@
                 </li>
                 <li class="program__item program__item--phone-number">
                   <label class="program__label" for="telephone">Телефон:*</label>
-                  <input class="program__input program__input--phone-number" type="tel" name="telephone" id="telephone" placeholder="8(960)900-60-90">
+                  <input class="program__input program__input--phone-number" type="tel" name="telephone" id="telephone" placeholder="8(960)900-60-90" pattern="[0-9]{11}">
                 </li>
               </ul>
             </div>
@@ -165,7 +167,7 @@
       </section>
       <div class="page-footer__box">
         <div class="page-footer__wrapper wrapper">
-          <a class="page-footer__logo page-footer__logo--index" href="index.html" aria-label="Кэт энерджи">
+          <a class="page-footer__logo" href="index.html" aria-label="Кэт энерджи">
             <svg class="page-footer__logo-img" width="128" height="24" role="img">
               <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
@@ -176,21 +178,21 @@
               <li class="socials__item">
                 <a class="socials__link" href="" aria-label="Вконтакте">
                   <svg class="socials__link-image socials__link-image--vk" fill="currentColor" role="img">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    <use xlink:href="img/sprite.svg#icon-vk-sprite"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="" aria-label="Инстаграм">
                   <svg class="socials__link-image socials__link-image--insta" fill="currentColor" role="img">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="img/sprite.svg#icon-insta-sprite"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="" aria-label="Фейсбук">
                   <svg class="socials__link-image socials__link-image--fb" fill="currentColor" role="img">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    <use xlink:href="img/sprite.svg#icon-fb-sprite"></use>
                   </svg>
                 </a>
               </li>
@@ -199,7 +201,10 @@
           <section class="copyright">
             <h2 class="visually-hidden">Разработчик</h2>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            HTML Academy
+              HTML Academy
+              <svg class="copyright__image" fill="currentColor" role="img" width="27" height="34">
+                <use xlink:href="img/sprite.svg#htmlacademy-sprite"></use>
+              </svg>
             </a>
           </section>
         </div>
