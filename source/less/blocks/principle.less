@@ -24,7 +24,7 @@
 
   &::before {
     content: "";
-    width: 150px;
+    width: 60px;
     height: 60px;
     left: 0;
     background-color: @bg-accent;
@@ -70,6 +70,7 @@
 
 .principle__text {
   margin: 0 0 0 21px;
+  width: 200px;
 }
 
 @media (min-width: @tablet-width) {
@@ -80,11 +81,13 @@
   .principle__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     margin-top: 67px;
   }
 
   .principle__item {
-    padding: 66px 0 0;
+    align-items: flex-start;
+    padding: 112px 0 0;
     width: 245px;
     min-height: 228px;
 
@@ -143,6 +146,7 @@
 
   .principle__text {
     margin-left: 0;
+    width: 250px;
   }
 }
 

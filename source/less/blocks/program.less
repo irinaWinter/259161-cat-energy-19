@@ -457,6 +457,7 @@
 
   .program__list--contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -473,6 +474,10 @@
     margin-top: 0;
   }
 
+  .program__list--contacts .program__item:nth-child(2n + 3) {
+    margin-top: 20px;
+  }
+
   .program__item--radio {
     width: auto;
   }
@@ -482,6 +487,10 @@
 
     &:not(:first-child) {
       margin-left: 107px;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 20px;
     }
   }
 
