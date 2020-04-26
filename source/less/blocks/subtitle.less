@@ -1,29 +1,26 @@
 .subtitle {
   position: relative;
 
-  &::after {
+  &::before {
     .pseudo;
     z-index: -1;
     top: 12px;
-    right: 0;
     height: 3px;
-    width: 55%;
+    width: 100%;
     background-color: @bg-accent;
   }
 }
 
 .subtitle__wrapper {
-  display: block;
-
-  &::first-line {
-    background-color: @bg-light;
-  }
+  padding-left: 0;
+  display: flex;
 }
 
 .subtitle__text {
-  display: inline-block;
-  margin: 0;
+  background-color: #ffffff;
   padding-right: 22px;
+  padding-left: 22px;
+  width: min-content;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -38,12 +35,11 @@
   .subtitle {
     &::after {
       top: 22px;
-      right: initial;
-      width: 100%;
     }
   }
 
   .subtitle__text {
+    width: max-content;
     padding-left: 39px;
     padding-right: 44px;
     font-size: 36px;
